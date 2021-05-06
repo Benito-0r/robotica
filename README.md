@@ -1,4 +1,4 @@
-# robotica
+# Robotica
 1. ex1_publisher_subscriber
 ***
 ## 1. ex1_publisher_subscriber
