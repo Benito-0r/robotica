@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<launch>
+  <include file="$(find m20ia_moveit_config)/launch/planning_context.launch">
+    <arg name="load_robot_description" value="true"/>
+  </include>
+  
+
+
+  <node name="m20ia_client"
+        pkg="m20ia_server_client"
+        type="m20ia_client"
+        respawn="false" output="screen">
+    <rosparam command="load"
+              file="$(find m20ia_moveit_config)/config/kinematics.yaml"/>
+  </node>
+</launch>
